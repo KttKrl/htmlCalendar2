@@ -1,0 +1,128 @@
+ body {
+    background: #d8c786;
+ }
+ /* Style for the navigation bar */
+ nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d8c786;
+    color: #cfbc14;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+ }
+nav .right-content {
+        text-align: right;
+        margin-left: auto; /* aligns to the right */
+        margin-right: 0; /* removes margin on the right */
+      }
+      
+nav .child-element {
+        margin-left: 10px; /* decreased margin between child elements */
+      }
+  
+  /* Style for the navigation links */
+  nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: #d8c786;
+    color: #333;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+  }
+  
+  .dropbtn:hover {
+    background-color: #da8f05;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #c74606;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+  }
+  
+  .dropdown-content a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .fa-angle-down {
+    margin-left: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      flex-wrap: wrap;
+    }
+    
+    .dropdown {
+      order: 2;
+      margin-top: 10px;
+    }
+    
+    .dropbtn {
+      padding: 5px;
+      font-size: 14px;
+    }
+    
+    .dropdown-content {
+      width: 100%;
+      left: 0;
+      right: 0;
+      border-radius: 0;
+    }
+  }
+  
+  /* Style for the search bar */
+  form {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  input[type="submit"] {
+    padding: 10px;
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
